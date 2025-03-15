@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_links",
+  "info": {
+    "singularName": "contact-link",
+    "pluralName": "contact-links",
+    "displayName": "contactLink",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "minLength": 1
+    },
+    "href": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "type_link": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::type-link.type-link"
+    }
+  }
+}
