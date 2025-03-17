@@ -33,9 +33,8 @@ export default [
   {
     name: "strapi::cors",
     config: {
-      enabled: true,
-      origin: "*",  // Allow all origins
-      methods: ["GET", "POST", "OPTIONS"],  // Allow GET, POST, OPTIONS
+      origin: '*',  // or ['https://yourfrontend.com']
+      methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     },
   },
 ];
